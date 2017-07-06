@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+
+body{
+  font-family: 'Dosis', sans-serif;
+}
+
 .navbar-toggle .icon-bar:nth-of-type(2) {
 	  top: 1px;
 }
@@ -81,9 +87,7 @@ video {
   box-sizing: border-box;
 }
 
-body {
-  color: white;
-}
+
 
 .video-container:after {
   content: '';
@@ -102,8 +106,9 @@ body {
   padding: 0;
   margin-top: 60px;
   line-height: 1;
-  font-family: Futura, Helvetica, sans-serif;
+  font-family: 'Dosis', sans-serif;
   font-size: 30px;
+  color: white;
 }
 @media (max-width: 400px) {
   .video-title {
@@ -205,4 +210,41 @@ body {
   video{
     display: none;
   }
+}
+
+.carousel-caption > p{
+  font-size: 18px;
+  color: #464646;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  min-height: 500px;    /* Set slide height here */
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none
+}
+
+.carousel-indicators li.active {
+    background-color: #00aff0;
+}
+
+.carousel-indicators li {
+  background-color: #ccc;
+}
+
+.glyphicon-chevron-left, .glyphicon-chevron-right{
+  color: #00aff0;
+}
+
+.carousel-caption {
+    position: absolute;
+    padding-top: 70px;
+    top: 0;
+    align-items: center;
+}
+
+#carousel-example-generic{
+  margin: 0px;
 }

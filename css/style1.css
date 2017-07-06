@@ -1,0 +1,127 @@
+.container1{
+	width: 100%;
+	position: relative;
+	text-align: center;
+}
+.clr{
+	clear: both;
+}
+.container1 > header{
+	padding: 30px 30px 10px 30px;
+	margin: 0px 20px 10px 20px;
+	position: relative;
+	display: block;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    text-align: right;
+}
+.container1 > header h1{
+	font-family: 'Bitter', Arial, sans-serif;
+	font-size: 30px;
+	line-height: 40px;
+	position: relative;
+	font-weight: 400;
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    padding: 0px 0px 5px 0px;
+}
+.container1 > header h1 span{
+	color: #000;
+	text-shadow: 0px 1px 1px rgba(0,0,0,0.3);
+}
+.container1 > header h2{
+	font-size: 16px;
+	font-style: italic;
+	padding: 0px 0px 15px 0px;
+}
+
+
+.se-container{
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	padding-top: 150px;
+}
+.se-slope{
+	margin: 0 -50px;
+	-webkit-transform-origin: left center;
+	-moz-transform-origin: left center;
+	-o-transform-origin: left center;
+	-ms-transform-origin: left center;
+	transform-origin: left center;
+}
+.se-slope:nth-child(odd){
+	background: #eee;
+	-webkit-transform: rotate(5deg);
+	-moz-transform: rotate(5deg);
+	-o-transform: rotate(5deg);
+	-ms-transform: rotate(5deg);
+	transform: rotate(5deg);
+	margin-top: -200px;
+}
+.se-slope:nth-child(even){
+	background: #fff;
+	-webkit-transform: rotate(-5deg);
+	-moz-transform: rotate(-5deg);
+	-o-transform: rotate(-5deg);
+	-ms-transform: rotate(-5deg);
+	transform: rotate(-5deg);
+}
+.se-content{
+	margin: 0 auto;
+}
+
+.se-slope:nth-child(odd) .se-content{
+	-webkit-transform: rotate(-5deg);
+	-moz-transform: rotate(-5deg);
+	-o-transform: rotate(-5deg);
+	-ms-transform: rotate(-5deg);
+	transform: rotate(-5deg);
+	color: #e90089;
+	padding: 60px 100px 250px 100px;
+}
+.se-slope:nth-child(even) .se-content{
+	-webkit-transform: rotate(5deg);
+	-moz-transform: rotate(5deg);
+	-o-transform: rotate(5deg);
+	-ms-transform: rotate(5deg);
+	transform: rotate(5deg);
+	color: #000;
+	padding: 150px 100px 250px 100px;
+}
+.se-slope:nth-child(odd) .se-content h3{
+	background: #e90089;
+	color: #000;
+}
+.se-slope:nth-child(even) .se-content h3{
+	background: #000;
+	color: #e90089;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1010px){
+	.se-content h3{
+		font-size: 40px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.se-content h3{
+		font-size: 20px;
+	}
+}
+@media screen and (max-width: 400px) {
+	.se-content h3{
+		font-size: 20px;
+		line-height: 20px;
+		padding-top: 30px;
+		height: 60px;
+	}
+	.se-content p{
+		width: 95%;
+	}
+	.se-slope:nth-child(odd) .se-content,
+	.se-slope:nth-child(even) .se-content{
+		padding-left:60px;
+		padding-right:60px;
+		
+	}
+}
