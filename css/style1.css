@@ -77,7 +77,7 @@
 	-ms-transform: rotate(-5deg);
 	transform: rotate(-5deg);
 	color: #e90089;
-	padding: 60px 100px 250px 100px;
+	padding: 60px 100px 240px 100px;
 }
 .se-slope:nth-child(even) .se-content{
 	-webkit-transform: rotate(5deg);
