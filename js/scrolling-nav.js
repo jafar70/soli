@@ -38,3 +38,37 @@ $(document).ready(function() {
  
   });
 });
+
+$(document).ready(function()
+{
+    $("#imgDino").hover(
+        function()
+        {
+            $(this).attr("src", "https://atap.google.com/soli/static/img/gestures/button.gif");
+        },
+        function()
+        {
+            $(this).attr("src", "https://atap.google.com/soli/static/img/gestures/button-still.jpg");
+        }                         
+    );                  
+    $("#imgDiall").hover(
+        function()
+        {
+            $(this).attr("src", "https://atap.google.com/soli/static/img/gestures/dial.gif");
+        },
+        function()
+        {
+            $(this).attr("src", "https://atap.google.com/soli/static/img/gestures/dial-still.jpg");
+        }                         
+    );  
+    $("#imgSlide").hover(
+        function()
+        {
+            $(this).attr("src", "https://atap.google.com/soli/static/img/gestures/slider.gif");
+        },
+        function()
+        {
+            $(this).attr("src", "https://atap.google.com/soli/static/img/gestures/slider-still.jpg");
+        }                         
+    ); 
+});
