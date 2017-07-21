@@ -2,6 +2,7 @@
 
 body{
   font-family: 'Dosis', sans-serif;
+  padding-top: 20px;
 }
 
 .navbar-toggle .icon-bar:nth-of-type(2) {
@@ -49,6 +50,25 @@ body{
      -moz-box-shadow: 5px 5px 5px #999;
      -webkit-box-shadow: 5px 5px 5px #999;
 }
+
+.navbar-default .navbar-nav > li > a{
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 16px;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus{
+  color:#00aff0;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus{
+  color:#00aff0;
+  background-color: transparent;
+}
+
 
 /*** T H E - M A G I C - O F - O B J E C T - F I T ***/
 /*****************************************************/
@@ -210,6 +230,14 @@ video {
   video{
     display: none;
   }
+  
+  #video-container{
+    background: url("https://atap.google.com/soli/static/img/developers/soli-dev-hero.jpg") center center/cover no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 }
 
 .carousel-caption > p{
@@ -247,4 +275,8 @@ video {
 
 #carousel-example-generic{
   margin: 0px;
+}
+
+.white-bk{
+  background-color: #fff;
 }
