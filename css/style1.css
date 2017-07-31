@@ -228,12 +228,30 @@ p{
 	padding-top: 100px;
 }
 
+.anglep{
+	padding-top: 80px;
+}
+
+.coin{
+	float: right;
+}
+
+@media screen and (max-width: 800px) {
+	.anglep{
+		padding-top: 0px;
+	}
+	
+	.coin{
+		float: left;
+	}
+}
+
 .footer-basic-centered{
 	background-color: white;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
 	width: 100%;
-	padding: 50px ;
+	padding: 50px 0px 50px 0px;
 	font-size: medium;
 }
 
@@ -245,6 +263,7 @@ p{
 #footer-list{
 	padding: 0;
 	padding-top: 16px;
+	float: right;
 }
 
 #footer-list > li > a{
